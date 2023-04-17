@@ -1,0 +1,350 @@
+
+/*Common Css Part Start*/
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul,ol{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a, a:hover{
+    text-decoration: none;
+    color:#000000;
+}
+img{
+    vertical-align: middle;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Oswald', sans-serif;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --primary: #0872b9;
+    --secondary:#5bc5f4;
+}
+/*Common Css Part End*/
+
+/*welcome part css Start*/
+.welcome_part{
+    background : var(--primary);
+    padding: 12px 0;
+}
+.welcome_part_head p{
+ font-size: 20px;
+ font-weight:400;
+}
+.welcome_part_icon ul{
+    column-gap: 30px;
+}
+.welcome_part_icon ul li a{
+    color: #fff;
+}
+.welcome_part_icon ul li a:hover{
+    color: #353535;
+}
+/*welcome part css End*/
+
+/*Navbar part css Start*/
+.navbar_menu{
+    padding: 12px 0;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--primary);
+}
+/*Navbar part css End*/
+
+/*Hero part css Start*/
+.hero_part{
+     background: url(../image/hero_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+.hero_part_overlay{
+    background: rgb(0,0,0,0.5);
+    padding: 160px 0;
+}
+.hero_con h1{
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.hero_con h1:nth-child(2){
+    font-size: 50px;
+    font-weight: bolder;
+}
+.hero_con p{
+padding: 30px 0;
+font-size: 20px;
+line-break: 30px;
+}
+.hero_btn a{
+    height: 43px;
+    width: 116px;
+    display: inline-block;
+    background: transparent;
+    text-align: center;
+    border: 1px solid white;
+    line-height: 43px;
+    font-weight: 600;
+    transition: .4s;
+}
+.hero_btn a:nth-child(1){
+    margin-right: 24px;
+}
+.hero_btn a:hover{
+    background: var(--primary);
+    border: 1px solid var(--primary);
+}
+/*Hero part css Start*/
+
+/*About part css Start*/
+.about_part{
+    padding: 70px 0;
+}
+.about_head h3{
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 0;
+}
+.about_part_main{
+    padding: 55px 0;
+}
+.about_part_main_bio p{
+    font-size: 16px;
+    line-height: 36px;
+    color: #555;
+}
+/*About part css End*/
+
+/*Service part css Start*/
+.service_head{
+ padding-bottom: 30px;
+}
+.service_part_content{
+    position: relative;
+    background: #f1f1f1;
+    transition: .4s;
+}
+.service_con{
+    padding: 24px;
+}
+.service_head_para h3{
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 25px 0 20px 0;
+}
+.service_head_para p{
+    color: #555;
+    line-height: 35px;
+    font-size: 16px;
+}
+.service_icon{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #f1f1f1;
+    border: 5px double white;
+    line-height: 66px;
+    position: absolute;
+    top: -18%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .4s;
+}
+.service_part_content :hover{
+    box-shadow: 0px 0px 15px -18px rgba(0,0,0,0.5);
+}
+.service_part_content :hover .service_icon{
+  background: var(--secondary);
+}
+/*Service part css End*/
+
+/*Portfolio part css Start*/
+.port_image{
+    position: relative;
+}
+.port_image:hover .port_image_overlay{
+    opacity: 1;
+}
+.port_image_overlay{
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: .4s;
+}
+.port_image_overlay a{
+    color:#fff;
+    height: 40px;
+    width: 40px;
+    display: block;
+    background: var(--secondary);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+}
+/*Portfolio part css End*/
+
+/*Team part css Start*/
+.our_team_img{
+    position: relative;
+    overflow: hidden;
+}
+.our_team_img:hover .team_img_overlay{
+   width: 33.33%;
+   opacity: 1;
+}
+.our_team_img:hover{
+    box-shadow: 0px 0px 20px -18px black;
+}
+.team_img_overlay{
+    height: 100%;
+    width: 0;
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+    opacity: 0;
+}
+
+.team_img_overlay ul li a{
+    color: #fff;
+    height: 45px;
+    width: 45px;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px 0;
+    font-size: 20px;
+    transition: .4s;
+}
+.team_img_overlay ul li a:hover{
+   background: var(--secondary);
+   border: 1px solid var(--secondary);
+}
+.our_team_con h4{
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top: 8px;
+}
+.our_team_img:hover ~ h4{
+    color: var(--secondary);
+}
+/*Team part css End*/
+
+/*TEstimonial part css Start*/
+.testi_con .wrapper{
+    background: #f1f1f1;
+    padding: 20px;
+    position: relative;
+}
+.triangel{
+    height: 45px;
+    width: 45px;
+    background: #f1f1f1;
+    position: absolute;
+    top: -22px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+}
+.testi_icon{
+    color: var(--secondary);
+}
+.wrapper h3{
+    text-transform: uppercase;
+    padding-top: 5px;
+    font-weight: 600;
+    font-size: 19px;
+}
+.wrapper h4{
+    padding-top: 5px;
+    font-size: 16px;
+}
+.wrapper p{
+    padding-top: 5px;
+    font-size: 16px;
+    color: #7c7c7c;
+}
+/*TEstimonial part css End*/
+
+/*Contact part css Start*/
+.contact_part{
+  background: #353535;
+  padding: 30px;
+}
+.contact_head{
+   margin-bottom: 30px;
+}
+.contact_head h5{
+    font-weight: 600;
+    padding-top: 10px;
+}
+.contact_con p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+}
+.contact_icon .icon_details p{
+    font-size: 13px;
+}
+.contact_icon a{
+    color: #fff;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    background: var(--secondary);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+}
+.contact_link ul li a{
+  color: #fff;
+  padding: 9px 0;
+  display: block;
+  font-size: 16px;
+  transition: .4s;
+}
+.contact_link ul li a:hover{
+    color: var(--secondary);
+}
+/*Contact part css End*/
+
+/*Footer part css Start*/
+.footer_con{
+    background: #555;
+    padding: 10px 0;
+}
+.footer_con p{
+    text-align: center;
+    color: #f1f1f1;
+    font-size: 16px;
+}
+
+
+/*Footer part css End*/
